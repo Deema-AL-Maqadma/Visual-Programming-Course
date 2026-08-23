@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="750.0" style="-fx-background-color: #905905; -fx-border-color: black; -fx-border-width: 15;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="361.0" fitWidth="221.0" layoutX="64.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Documents/NetBeansProjects/VP_FinalProject/src/imsges/WhatsApp%20Image%202025-07-29%20at%2010.00.29_f0922b69.jpg" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="314.0" layoutY="110.0" text="Deema Mohammed AL-Maqadma" textFill="#82c7ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="315.0" prefHeight="92.0" prefWidth="331.0" style="-fx-background-color: 273F4F;" text="Computer Science Student, Level 2, AL-Aqsa Universiry" textFill="#65ade8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="163.0" text="📅 15/6/2005" textFill="#82c7ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="209.0" text="📍 Gaza, Palestine" textFill="#82c7ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="427.0" prefHeight="47.0" prefWidth="518.0" text="Project Idea: Library Management System" textFill="#65ade8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="474.0" prefHeight="83.0" prefWidth="341.0" text="Visual Programming Course With: Eng.Mahmoud Ashour" textFill="#65ade8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="313.0" layoutY="293.0" prefHeight="16.0" prefWidth="387.0" />
+      <Separator layoutX="313.0" layoutY="73.0" prefHeight="16.0" prefWidth="387.0" />
+      <Separator layoutX="267.0" layoutY="46.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="38.0" />
+      <Separator layoutX="26.0" layoutY="46.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="38.0" />
+      <Separator layoutX="51.0" layoutY="419.0" prefHeight="16.0" prefWidth="228.0" />
+      <Separator layoutX="51.0" layoutY="20.0" prefHeight="16.0" prefWidth="228.0" />
+      <Label layoutX="325.0" layoutY="249.0" text="📞 0599879617" textFill="#82c7ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testjavafx2.TestController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="405.0" style="-fx-background-color: linear-gradient(to right, #283e51, #485563); -fx-border-color: black; -fx-border-width: 5;">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="310.0" layoutX="51.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@الصور/خلفية.jpeg" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+            <Label focusTraversable="false" layoutX="60.0" layoutY="99.0" prefHeight="50.0" prefWidth="297.0" text="Change Password">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4944751381215469" centerY="0.533175355450237" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.27843138575553894" green="0.8039215803146362" blue="0.7254902124404907" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7019608020782471" green="0.23137255012989044" blue="0.7764706015586853" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <TextField focusTraversable="false" layoutX="60.0" layoutY="263.0" prefHeight="36.0" prefWidth="280.0" promptText="Username" style="-fx-background-color: #ececec;;" />
+            <Button focusTraversable="false" layoutX="57.0" layoutY="458.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="287.0" style="-fx-background-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);" text="Change" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label focusTraversable="false" layoutX="60.0" layoutY="237.0" text="Current Password" textFill="#eee8e8">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label focusTraversable="false" layoutX="60.0" layoutY="307.0" text="New Password" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField focusTraversable="false" layoutX="60.0" layoutY="338.0" prefHeight="36.0" prefWidth="280.0" promptText="Password" style="-fx-background-color: #ececec;" />
+            <Label focusTraversable="false" layoutX="60.0" layoutY="374.0" text="Confirm Password" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField focusTraversable="false" layoutX="60.0" layoutY="399.0" prefHeight="36.0" prefWidth="280.0" promptText="Confirm Password" style="-fx-background-color: #ececec;" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
