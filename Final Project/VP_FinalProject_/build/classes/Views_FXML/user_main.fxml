@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.User_mainController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="750.0" style="-fx-background-color: #905905; -fx-border-color: black;; -fx-border-width: 15;">
+         <children>
+            <VBox fx:id="pane" layoutX="217.0" layoutY="35.0" prefHeight="495.0" prefWidth="417.0" spacing="4.0" style="-fx-background-color: linear-gradient(to right, #1F1D36, #485563); -fx-border-color: black;; -fx-border-width: 5;">
+               <children>
+                  <TextField fx:id="tf_id" focusTraversable="false" prefHeight="30.0" prefWidth="252.0" promptText="Book ID" style="-fx-background-color: #ececec;">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="tf_title" focusTraversable="false" layoutX="16.0" layoutY="16.0" prefHeight="30.0" prefWidth="252.0" promptText="Title" style="-fx-background-color: #ececec;">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="tf_auther" focusTraversable="false" layoutX="15.0" layoutY="53.0" prefHeight="30.0" prefWidth="252.0" promptText="Auther Name" style="-fx-background-color: #ececec;">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <CheckBox fx:id="checkBox_cheched" focusTraversable="false" mnemonicParsing="false" text="Checked Out" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <ComboBox fx:id="comboBox_genre" focusTraversable="false" prefHeight="35.0" prefWidth="257.0" promptText="Genre">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextArea fx:id="ta_notes" focusTraversable="false" prefHeight="88.0" prefWidth="240.0" promptText="Notes">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="18.0">
+                     <children>
+                        <Button fx:id="btn_upload" focusTraversable="false" mnemonicParsing="false" onAction="#ChoosePhoto" prefHeight="76.0" prefWidth="66.0" text="Upload Book Cover" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <ImageView fx:id="imageView" fitHeight="116.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="44.0" prefWidth="244.0">
+                     <children>
+                        <Label focusTraversable="false" text="For More Details" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="link_contact" focusTraversable="false" onAction="#HyperLink" text="Contact Here!">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Label focusTraversable="false" layoutX="34.0" layoutY="241.0" prefHeight="158.0" prefWidth="158.0" text="Welcome To:   &lt; Library Management       System &gt;" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.4597156398104265" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8705882430076599" green="0.8941176533699036" blue="0.40784314274787903" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6784313917160034" green="0.9607843160629272" blue="0.9137254953384399" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="btn_save" focusTraversable="false" layoutX="646.0" layoutY="448.0" mnemonicParsing="false" onAction="#save" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: linear-gradient(to right, #0f2027, #203a43, #2c5364); -fx-background-radius: 8;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btn_exit" focusTraversable="false" layoutX="646.0" layoutY="498.0" mnemonicParsing="false" onAction="#goToExit" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: linear-gradient(to right, #0f2027, #203a43, #2c5364); -fx-background-radius: 8;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Label focusTraversable="false" layoutX="34.0" layoutY="408.0" prefHeight="101.0" prefWidth="142.0" text="Please submit a borrow request to proceed" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.4597156398104265" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8705882430076599" green="0.8941176533699036" blue="0.40784314274787903" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6784313917160034" green="0.9607843160629272" blue="0.9137254953384399" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Separator layoutX="28.0" layoutY="239.0" prefHeight="4.0" prefWidth="171.0" />
+            <Separator layoutX="28.0" layoutY="406.0" prefHeight="4.0" prefWidth="171.0" />
+            <ImageView fitHeight="158.0" fitWidth="171.0" layoutX="28.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logo.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

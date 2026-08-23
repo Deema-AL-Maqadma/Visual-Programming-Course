@@ -1,0 +1,59 @@
+
+
+
+
+
+              بسم الله الرحمن الرحيم
+       
+* اسم الطالبة / ديمه محمد أحمد المقادمه 
+* اسم المساق /  (Visual Programming)
+* البشمهندس / محمود عاشور
+#--------------------------------------------------
+
+** My Name : Deema Mohammed AL-Maqadma
+ * Final Project : Library Management System
+ * Presented to : Eng. Mahmoud Ashour
+
+#--------------------------------------------------
+
+---> Implementation on : 
+ - NetBeans.
+ - SceneBuilder.
+ - Xammp.
+ - Word & Painter for  Documentation & Flow Chart.
+ - Bandicam for Record YouTube Video.
+ - Power Point for Presintaion Logo & User Interface Design.
+
+#--------------------------------------------------
+---> Subjects covered in my project: 
+ OOP Concepts. 
+ All UI Contral. 
+ Different Layout. 
+ Add – Show - Update - Delete – Exit.
+ Sign Up – Sign In – Logout.
+ Event (Action – Key Pressed – Mouse Pressed). 
+ multi-stage (Sign Up & Sign In & Home & etc.….).
+ Scene Builder. 
+ Dialog. 
+ Text Input Dialog.
+ Linear Gradient Color (in Scene Builder). 
+ CSS (in Scene Builder).
+ Database (My SQL).
+
+#--------------------------------------------------
+---> Bonus:
+ Make a project presentation (Slide + Flow Chart). 
+ YouTube Vedio.
+ Design a Logo & Identification card.
+ The password was encrypted using MD5 before storing it in the database table.  
+ Validation if user already exist
+
+
+رابط شرح المشروع على منصة اليوتيوب/
+https://youtu.be/HJiMvpnaI3A?si=FJ1-URD8MvU3FEOQ
+
+مناقشة Final Project 
+Library Management System 
+ديمه محمد أحمد المقادمه
+
+
