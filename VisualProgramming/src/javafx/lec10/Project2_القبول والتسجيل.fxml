@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="515.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.lec10.Project2_القبولوالتسجيلController">
+   <children>
+      <Pane layoutX="182.0" prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="443.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="15.0" text="القبول والتسجيل" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="3.0" layoutY="74.0" prefHeight="435.0" prefWidth="159.0" style="-fx-background-color: pink; -fx-border-color: black; -fx-border-width: 3;">
+         <children>
+            <HBox prefHeight="8.0" prefWidth="148.0" spacing="6.0">
+               <children>
+                  <TextField focusTraversable="false" promptText="رقم الطالب" />
+                  <Button mnemonicParsing="false" text="..." />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="8.0" prefWidth="148.0" spacing="6.0">
+               <children>
+                  <DatePicker focusTraversable="false" promptText="تاريخ الميلاد" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="8.0" prefWidth="148.0" spacing="6.0">
+               <children>
+                  <TextField focusTraversable="false" promptText="اسم الطالب" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="148.0" spacing="5.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="ذكر" />
+                  <RadioButton mnemonicParsing="false" text="انثى" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <ComboBox fx:id="depCombo" prefHeight="27.0" prefWidth="144.0" promptText="التخصص">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField focusTraversable="false" prefHeight="19.0" prefWidth="148.0" promptText="مستوى الطالب">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField focusTraversable="false" promptText="المعدل">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="89.0" prefWidth="153.0" spacing="3.0">
+               <children>
+                  <ImageView fx:id="choose" fitHeight="78.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="Choose" mnemonicParsing="false" onAction="#openImage" text="تحميل الصورة" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></HBox>
+            <TextArea fx:id="note" focusTraversable="false" prefHeight="84.0" prefWidth="143.0" promptText="ملاحظاتك" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextArea>
+         </children>
+      </VBox>
+      <TableView layoutX="165.0" layoutY="72.0" onSort="#openImage" prefHeight="398.0" prefWidth="483.0" style="-fx-background-color: whigte;" AnchorPane.leftAnchor="165.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="رقم الطالب" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="اسم الطالب" />
+            <TableColumn fx:id="gender" prefWidth="75.0" text="الجنس" />
+            <TableColumn fx:id="dep" prefWidth="75.0" text="التخصص" />
+            <TableColumn fx:id="level" prefWidth="75.0" text="المستوى" />
+            <TableColumn fx:id="grade" prefWidth="75.0" text="المعدل" />
+        </columns>
+      </TableView>
+      <HBox layoutX="162.0" layoutY="469.0" prefHeight="43.0" prefWidth="483.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" text="حفظ" textFill="#17ee3f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="حذف">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="جديد" textFill="#2215b2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exit" text="خروج" textFill="#f51010">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

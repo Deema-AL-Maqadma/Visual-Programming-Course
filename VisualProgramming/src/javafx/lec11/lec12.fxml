@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.lec11.Lec12Controller">
+   <children>
+      <TableView fx:id="table" layoutX="198.0" layoutY="2.0" onMouseClicked="#getSelecteed" prefHeight="404.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="95.0" text="ID" />
+          <TableColumn fx:id="fn" prefWidth="103.0" text="First Name" />
+            <TableColumn fx:id="ln" prefWidth="106.0" text="Last Name" />
+            <TableColumn fx:id="mob" minWidth="8.0" prefWidth="96.0" text="Mobile" />
+        </columns>
+      </TableView>
+      <VBox layoutX="3.0" prefHeight="410.0" prefWidth="197.0">
+         <children>
+            <TextField fx:id="tfid" promptText="ID">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="45.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfFn" promptText="First Name">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfLn" promptText="Last Name">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="tfMob" promptText="Mobile">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="add_btn" focusTraversable="false" mnemonicParsing="false" onAction="#addStudent" prefHeight="27.0" prefWidth="191.0" style="-fx-background-color: green;" text="Add Student">
+               <VBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="edit_btn" mnemonicParsing="false" onAction="#editStudent" prefHeight="27.0" prefWidth="191.0" style="-fx-background-color: blue;" text="Edit Student">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="delete_btn" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="27.0" prefWidth="191.0" style="-fx-background-color: red;" text="Delete Student">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

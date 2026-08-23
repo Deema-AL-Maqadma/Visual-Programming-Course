@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.lec8.FirstSBController">
+   <children>
+      <Label text="Coffee Machine" textFill="#bf400d">
+         <font>
+            <Font size="43.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="35.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <Label text="Coffe Type" textFill="#400d83">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField focusTraversable="false" promptText="Enter your coffee tupe">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <Label text="Coffee Size" textFill="#400d83">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField focusTraversable="false" promptText="Enter your coffee size">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </HBox>
+      <Button alignment="BOTTOM_CENTER" focusTraversable="false" lineSpacing="30.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Login" textFill="#f87603" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</VBox>

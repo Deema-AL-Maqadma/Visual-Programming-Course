@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="486.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #89CFF0, #FFFFFF);;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment2.AssignmentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="110.0" layoutY="2.0" prefHeight="69.0" prefWidth="247.0" text="Body Mass Index" textAlignment="CENTER" textFill="RED" wrapText="true" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="129.20000000000005" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </Label>
+      <Separator layoutX="1.0" layoutY="69.0" prefHeight="0.0" prefWidth="354.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="72.8" prefHeight="41.0" prefWidth="444.0" spacing="40.0" AnchorPane.bottomAnchor="461.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="73.0">
+         <children>
+            <Label focusTraversable="false" text="Gender: ">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="266.0">
+               <children>
+                  <RadioButton fx:id="rbtn_Male" focusTraversable="false" mnemonicParsing="false" text="Male">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbtn_Female" focusTraversable="false" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="11.2" layoutY="100.0" prefHeight="41.0" prefWidth="444.0" spacing="70.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="31.0">
+         <children>
+            <Label text="Age: ">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <TextField fx:id="tf_Age" focusTraversable="false" maxWidth="999.0" prefWidth="210.0" promptText="Enter age in years">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="135.0" prefHeight="41.0" prefWidth="446.0" spacing="53.0">
+         <children>
+            <Label text="Height: ">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <TextField fx:id="tf_Height" focusTraversable="false" maxWidth="999.0" prefWidth="210.0" promptText="Enter height in cm">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="170.0" prefHeight="41.0" prefWidth="446.0" spacing="53.0">
+         <children>
+            <Label text="Weight:">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <TextField fx:id="tf_Weight" focusTraversable="false" maxWidth="999.0" prefWidth="210.0" promptText="Enter weight in kg">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="205.0" prefHeight="41.0" prefWidth="446.0" spacing="48.0">
+         <children>
+            <Label text="Activity:">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <ComboBox fx:id="cbox_Activity" focusTraversable="false" maxWidth="999.0" prefWidth="210.0" promptText="Select activity level">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="56.0" layoutY="256.0" prefHeight="0.0" prefWidth="354.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <HBox alignment="CENTER" layoutX="146.0" layoutY="260.0" prefHeight="54.0" prefWidth="210.0" spacing="20.0">
+         <children>
+            <Button fx:id="btn_Calc" focusTraversable="false" mnemonicParsing="false" onAction="#btnCalc" prefWidth="100.0" style="-fx-background-color: linear-gradient(#66BB6A, #388E3C); -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 4, 0.0, 0, 2);" text="Calc" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_New" focusTraversable="false" mnemonicParsing="false" onAction="#btnNew" prefWidth="100.0" style="-fx-background-color: linear-gradient(#66BB6A, #388E3C); -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 4, 0.0, 0, 2);" text="New" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="31.2" layoutY="322.0" prefHeight="3.0" prefWidth="425.0" AnchorPane.leftAnchor="31.2" AnchorPane.rightAnchor="30.399999999999977" />
+      <CheckBox fx:id="checkb_Display" focusTraversable="false" layoutX="31.0" layoutY="339.0" mnemonicParsing="false" text="Display Image">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Hyperlink fx:id="link_Click" focusTraversable="false" layoutX="30.0" layoutY="502.0" onAction="#clickHere" text="Click Here! ">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="bmi_Image" fitHeight="150.0" fitWidth="166.0" layoutX="290.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <VBox alignment="CENTER_LEFT" layoutX="66.0" layoutY="371.0" prefHeight="130.0" prefWidth="194.0" spacing="20.0" AnchorPane.leftAnchor="32.0">
+         <children>
+            <Label fx:id="bmi_Label" textFill="#b13535">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bmr_Label" textFill="#b13535">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="tdee_Label" textFill="#b13535">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
